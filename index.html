@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eshu | Web Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Eshu Sharma</h1>
+    <p>Web Developer | Creative Coder | Problem Solver</p>
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#internship">Internship</a>
+      <a href="#todo-app">To-Do App</a>
+      <a href="#product-listing">Products</a>
+      <a href="#photo">Photo</a>
+      <a href="#contact">Contact</a>
+      <a href="https://github.com/eshu077" target="_blank">GitHub</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <h2>Hi, I'm Eshu 👋</h2>
+      <p>I build responsive, interactive web experiences using modern JavaScript.</p>
+      <a href="#projects" class="cta-button">View My Work</a>
+    </section>
+
+    <section id="projects">
+      <h2>Featured Projects</h2>
+      <div class="project"><h3>Amazon Clone</h3><p>Responsive e-commerce UI with product cards, cart, and filters.</p></div>
+      <div class="project"><h3>Spotify Clone</h3><p>Music streaming interface with playlist and playback controls.</p></div>
+      <div class="project"><h3>Portfolio Website</h3><p>Multi-page responsive portfolio with animations and GitHub integration.</p></div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills & Frameworks</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript (ES6+)</li>
+        <li>Responsive Design & Accessibility</li>
+        <li>Node.js, Express.js, MongoDB</li>
+        <li>React.js, Mongoose, REST APIs</li>
+        <li>Git, GitHub, VS Code</li>
+      </ul>
+    </section>
+
+    <section id="internship">
+      <h2>Internship Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item"><h4>Week 1–2</h4><p>Built responsive dashboards using HTML, CSS, and ES6.</p></div>
+        <div class="timeline-item"><h4>Week 3–4</h4><p>Created interactive resumes with GitHub integration and animations.</p></div>
+        <div class="timeline-item"><h4>Week 5–6</h4><p>Developed real-world apps with API integration and score tracking.</p></div>
+      </div>
+    </section>
+
+    <section id="todo-app">
+      <h2>To-Do List App</h2>
+      <input type="text" id="taskInput" placeholder="Add a task..." />
+      <button onclick="addTask()">Add</button>
+      <ul id="taskList"></ul>
+    </section>
+
+    <section id="product-listing">
+      <h2>Product Listing Page</h2>
+      <input type="text" id="searchProduct" placeholder="Search products..." />
+      <select id="filterCategory">
+        <option value="all">All Categories</option>
+        <option value="electronics">Electronics</option>
+        <option value="fashion">Fashion</option>
+      </select>
+      <select id="sortPrice">
+        <option value="asc">Price: Low to High</option>
+        <option value="desc">Price: High to Low</option>
+      </select>
+      <div id="productContainer"></div>
+    </section>
+
+    <section id="photo">
+      <h2>My Photo</h2>
+      <input type="file" id="photoUpload" accept="image/*" />
+      <div id="photoPreview"></div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <p id="formStatus"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Eshu | Built with ❤️ using HTML, CSS & JS</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
